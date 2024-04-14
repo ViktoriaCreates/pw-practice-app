@@ -19,7 +19,7 @@ test.describe('suite1', () => {
     })   
 })
 
-test.describe.only('suite1', () => {
+test.describe('suite1', () => {
     test.beforeEach(async({page}) => {
         await page.getByText('Forms').click()
     })
