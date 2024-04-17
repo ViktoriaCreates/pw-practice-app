@@ -7,7 +7,7 @@ test.beforeEach(async({page}) => {
     await page.getByText('Form Layouts').click()
 })
 
-// We have  duplicates in 3 lines: 
+// We have 3 duplicates in 3 lines: 
 // await page.locator('nb-card').filter({hasText: "Basic form"}).getByRole('textbox', {name: "Email"}).fill('test@test.com')
 // await page.locator('nb-card').filter({hasText: "Basic form"}).getByRole('textbox', {name: "Password"}).fill('Welcome123')
 // await page.locator('nb-card').filter({hasText: "Basic form"}).getByRole('button').click()
