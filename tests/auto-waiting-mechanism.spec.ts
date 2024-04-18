@@ -9,9 +9,10 @@ test.beforeEach(async({page}) => {
 test('auto waiting', async({page}) => {
     const successButton = page.locator('.bg-success')
     
-   // await successButton.click()
+    // await successButton.click()
 
-  //  const text = await successButton.textContent()
+    //  const text = await successButton.textContent()
+    // expect(text).toEqual('Data loaded with AJAX get request.')
 
     // await successButton.waitFor({state: "attached"})
     // const text = await successButton.allTextContents()
@@ -36,4 +37,5 @@ test('alternative waits', async({page})=> {
 
     const text = await successButton.allTextContents()
     expect(text).toContain('Data loaded with AJAX get request.')
+    
 })
